@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main container */
+.container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Heading */
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+}
+
+/* Stopwatch display */
+#display {
+  font-size: 3rem;
+  margin: 20px 0;
+  padding: 15px 25px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  letter-spacing: 3px;
+}
+
+/* Buttons */
+.buttons button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+#start { background: #28a745; color: white; }
+#pause { background: #ffc107; color: black; }
+#reset { background: #dc3545; color: white; }
+#lap   { background: #007bff; color: white; }
+
+.buttons button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
+}
+
+/* Lap list */
+#laps {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+#laps li {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  margin: 5px 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: left;
+}
